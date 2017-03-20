@@ -6,8 +6,13 @@
 path(path, 'c:\data\mlbook');
 
 
-如何在其启动 MATLAB 时，自动设定所需的搜寻路径？ 如果在每一次启动MATLAB 後都要设定所需的搜寻路径， 将是一件很麻烦的事。有两种方法， 可以使 MATLAB启动後 ，即可载入使用者定义的搜寻路径：
+如何在其启动 MATLAB 时，自动设定所需的搜寻路径？ 如果在每一次启动MATLAB 後都要设定所需的搜寻路径，
+ 将是一件很麻烦的事。有两种方法， 可以使 MATLAB启动後 ，即可载入使用者定义的搜寻路径：
 
-1.MATLAB 的预设搜寻路径是定义在 matlabrc.m （在 C:\Program Files\MATLAB\R2016a\toolbox\local 之下， 或是其他安装 MATLAB的主目录下）， MATLAB 每次启动後， 即自动执行此档案。 因此你可以直接修改 matlabrc.m ，以加入新的目录於搜寻路径之中。
+1.MATLAB 的预设搜寻路径是定义在 matlabrc.m （在 C:\Program Files\MATLAB\R2016a\toolbox\local 之下，
+ 或是其他安装 MATLAB的主目录下）， MATLAB 每次启动後， 即自动执行此档案。 因此你可以直接修改 
+ matlabrc.m ，以加入新的目录於搜寻路径之中。
 
-2.MATLAB 在执行 matlabrc.m 时，同时也会在预设搜寻路径中寻找 startup.m(2016版为：pathdef.m)，若此档案存在，则执行其所含的命令。因此我们可将所有在 MATLAB 启动时必须执行的命令（包含更改搜寻路径的命令），放在此档案中
+2.MATLAB 在执行 matlabrc.m 时，同时也会在预设搜寻路径中寻找 startup.m(2016版为：pathdef.m)，若此
+档案存在，则执行其所含的命令。因此我们可将所有在 MATLAB 启动时必须执行的命令（包含更改搜寻路径的
+命令），放在此档案中。
